@@ -15,6 +15,13 @@
 		B53BEEB824BE8399000958B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53BEEB624BE8399000958B2 /* LaunchScreen.storyboard */; };
 		B53BEEC324BE8399000958B2 /* ChildCareManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BEEC224BE8399000958B2 /* ChildCareManagerTests.swift */; };
 		B53BEECE24BE8399000958B2 /* ChildCareManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53BEECD24BE8399000958B2 /* ChildCareManagerUITests.swift */; };
+		B5AC53E624BFCA8900422B65 /* FooterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53E524BFCA8900422B65 /* FooterBar.swift */; };
+		B5AC53EA24BFF27100422B65 /* footerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53E924BFF27100422B65 /* footerButton.swift */; };
+		B5AC53F024C0A9A500422B65 /* CheckInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53EF24C0A9A500422B65 /* CheckInPage.swift */; };
+		B5AC53F424C0B54D00422B65 /* checkInRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53F324C0B54D00422B65 /* checkInRow.swift */; };
+		B5AC53F724C0BBC200422B65 /* KidsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53F524C0BBC200422B65 /* KidsModel.xcdatamodeld */; };
+		B5AC53FA24C0BC3100422B65 /* Child+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53F824C0BC3100422B65 /* Child+CoreDataClass.swift */; };
+		B5AC53FB24C0BC3100422B65 /* Child+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53F924C0BC3100422B65 /* Child+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		B53BEEC924BE8399000958B2 /* ChildCareManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChildCareManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53BEECD24BE8399000958B2 /* ChildCareManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCareManagerUITests.swift; sourceTree = "<group>"; };
 		B53BEECF24BE8399000958B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5AC53E524BFCA8900422B65 /* FooterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterBar.swift; sourceTree = "<group>"; };
+		B5AC53E924BFF27100422B65 /* footerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = footerButton.swift; sourceTree = "<group>"; };
+		B5AC53EF24C0A9A500422B65 /* CheckInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInPage.swift; sourceTree = "<group>"; };
+		B5AC53F324C0B54D00422B65 /* checkInRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkInRow.swift; sourceTree = "<group>"; };
+		B5AC53F624C0BBC200422B65 /* KidsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KidsModel.xcdatamodel; sourceTree = "<group>"; };
+		B5AC53F824C0BC3100422B65 /* Child+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5AC53F924C0BC3100422B65 /* Child+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +113,15 @@
 		B53BEEAA24BE8397000958B2 /* ChildCareManager */ = {
 			isa = PBXGroup;
 			children = (
+				B5AC53F524C0BBC200422B65 /* KidsModel.xcdatamodeld */,
+				B5AC53F824C0BC3100422B65 /* Child+CoreDataClass.swift */,
+				B5AC53F924C0BC3100422B65 /* Child+CoreDataProperties.swift */,
 				B53BEEAB24BE8397000958B2 /* AppDelegate.swift */,
 				B53BEEAD24BE8397000958B2 /* SceneDelegate.swift */,
 				B53BEEAF24BE8397000958B2 /* ContentView.swift */,
+				B5AC53EF24C0A9A500422B65 /* CheckInPage.swift */,
+				B5AC53F324C0B54D00422B65 /* checkInRow.swift */,
+				B5AC53EB24C0A71600422B65 /* FooterStuffs_depreciated */,
 				B53BEEB124BE8399000958B2 /* Assets.xcassets */,
 				B53BEEB624BE8399000958B2 /* LaunchScreen.storyboard */,
 				B53BEEB924BE8399000958B2 /* Info.plist */,
@@ -134,6 +154,15 @@
 				B53BEECF24BE8399000958B2 /* Info.plist */,
 			);
 			path = ChildCareManagerUITests;
+			sourceTree = "<group>";
+		};
+		B5AC53EB24C0A71600422B65 /* FooterStuffs_depreciated */ = {
+			isa = PBXGroup;
+			children = (
+				B5AC53E524BFCA8900422B65 /* FooterBar.swift */,
+				B5AC53E924BFF27100422B65 /* footerButton.swift */,
+			);
+			path = FooterStuffs_depreciated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +297,14 @@
 			files = (
 				B53BEEAC24BE8397000958B2 /* AppDelegate.swift in Sources */,
 				B53BEEAE24BE8397000958B2 /* SceneDelegate.swift in Sources */,
+				B5AC53FA24C0BC3100422B65 /* Child+CoreDataClass.swift in Sources */,
+				B5AC53F724C0BBC200422B65 /* KidsModel.xcdatamodeld in Sources */,
+				B5AC53E624BFCA8900422B65 /* FooterBar.swift in Sources */,
+				B5AC53EA24BFF27100422B65 /* footerButton.swift in Sources */,
+				B5AC53F424C0B54D00422B65 /* checkInRow.swift in Sources */,
 				B53BEEB024BE8397000958B2 /* ContentView.swift in Sources */,
+				B5AC53F024C0A9A500422B65 /* CheckInPage.swift in Sources */,
+				B5AC53FB24C0BC3100422B65 /* Child+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +633,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B5AC53F524C0BBC200422B65 /* KidsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B5AC53F624C0BBC200422B65 /* KidsModel.xcdatamodel */,
+			);
+			currentVersion = B5AC53F624C0BBC200422B65 /* KidsModel.xcdatamodel */;
+			path = KidsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B53BEEA024BE8397000958B2 /* Project object */;
 }
