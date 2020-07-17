@@ -10,7 +10,8 @@ import SwiftUI
 struct CheckOutModal: View {
     let kid:String
     @Environment(\.managedObjectContext) var managedObjectContext
-    var checks:FetchRequest<CheckInOuts>
+    var checkRequest: FetchRequest<CheckInOuts>
+    var checks:FetchedResults<CheckInOuts>{checkRequest.wrappedValue}
     
     
     var body: some View {
@@ -21,6 +22,10 @@ struct CheckOutModal: View {
                 
             }
         }
+    }
+    
+    init(){
+        self.checksRequest = FetchRequest<CheckInOuts>(entity: CheckInOuts.getAllKid(kid), sortDescriptors: [])
     }
 }
 
