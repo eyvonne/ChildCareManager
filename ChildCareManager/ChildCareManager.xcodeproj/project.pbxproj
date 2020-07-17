@@ -20,8 +20,11 @@
 		B5AC53F024C0A9A500422B65 /* CheckInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53EF24C0A9A500422B65 /* CheckInPage.swift */; };
 		B5AC53F424C0B54D00422B65 /* checkInRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53F324C0B54D00422B65 /* checkInRow.swift */; };
 		B5AC53F724C0BBC200422B65 /* KidsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53F524C0BBC200422B65 /* KidsModel.xcdatamodeld */; };
-		B5AC53FA24C0BC3100422B65 /* Child+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53F824C0BC3100422B65 /* Child+CoreDataClass.swift */; };
-		B5AC53FB24C0BC3100422B65 /* Child+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53F924C0BC3100422B65 /* Child+CoreDataProperties.swift */; };
+		B5AC53FD24C0F50000422B65 /* addChildModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC53FC24C0F50000422B65 /* addChildModal.swift */; };
+		B5AC540524C11AF500422B65 /* Child+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC540224C11AF500422B65 /* Child+CoreDataClass.swift */; };
+		B5AC540624C11AF500422B65 /* Child+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC540324C11AF500422B65 /* Child+CoreDataProperties.swift */; };
+		B5AC540724C11AF500422B65 /* CheckInOuts+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC540424C11AF500422B65 /* CheckInOuts+CoreDataProperties.swift */; };
+		B5AC540924C11DB700422B65 /* CheckOutModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC540824C11DB700422B65 /* CheckOutModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +64,11 @@
 		B5AC53EF24C0A9A500422B65 /* CheckInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInPage.swift; sourceTree = "<group>"; };
 		B5AC53F324C0B54D00422B65 /* checkInRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkInRow.swift; sourceTree = "<group>"; };
 		B5AC53F624C0BBC200422B65 /* KidsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KidsModel.xcdatamodel; sourceTree = "<group>"; };
-		B5AC53F824C0BC3100422B65 /* Child+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B5AC53F924C0BC3100422B65 /* Child+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5AC53FC24C0F50000422B65 /* addChildModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addChildModal.swift; sourceTree = "<group>"; };
+		B5AC540224C11AF500422B65 /* Child+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		B5AC540324C11AF500422B65 /* Child+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Child+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B5AC540424C11AF500422B65 /* CheckInOuts+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CheckInOuts+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B5AC540824C11DB700422B65 /* CheckOutModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +119,17 @@
 		B53BEEAA24BE8397000958B2 /* ChildCareManager */ = {
 			isa = PBXGroup;
 			children = (
+				B5AC540224C11AF500422B65 /* Child+CoreDataClass.swift */,
+				B5AC540324C11AF500422B65 /* Child+CoreDataProperties.swift */,
+				B5AC540424C11AF500422B65 /* CheckInOuts+CoreDataProperties.swift */,
 				B5AC53F524C0BBC200422B65 /* KidsModel.xcdatamodeld */,
-				B5AC53F824C0BC3100422B65 /* Child+CoreDataClass.swift */,
-				B5AC53F924C0BC3100422B65 /* Child+CoreDataProperties.swift */,
 				B53BEEAB24BE8397000958B2 /* AppDelegate.swift */,
 				B53BEEAD24BE8397000958B2 /* SceneDelegate.swift */,
 				B53BEEAF24BE8397000958B2 /* ContentView.swift */,
 				B5AC53EF24C0A9A500422B65 /* CheckInPage.swift */,
+				B5AC53FC24C0F50000422B65 /* addChildModal.swift */,
 				B5AC53F324C0B54D00422B65 /* checkInRow.swift */,
+				B5AC540824C11DB700422B65 /* CheckOutModal.swift */,
 				B5AC53EB24C0A71600422B65 /* FooterStuffs_depreciated */,
 				B53BEEB124BE8399000958B2 /* Assets.xcassets */,
 				B53BEEB624BE8399000958B2 /* LaunchScreen.storyboard */,
@@ -295,16 +304,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5AC540724C11AF500422B65 /* CheckInOuts+CoreDataProperties.swift in Sources */,
+				B5AC540524C11AF500422B65 /* Child+CoreDataClass.swift in Sources */,
+				B5AC540624C11AF500422B65 /* Child+CoreDataProperties.swift in Sources */,
 				B53BEEAC24BE8397000958B2 /* AppDelegate.swift in Sources */,
 				B53BEEAE24BE8397000958B2 /* SceneDelegate.swift in Sources */,
-				B5AC53FA24C0BC3100422B65 /* Child+CoreDataClass.swift in Sources */,
 				B5AC53F724C0BBC200422B65 /* KidsModel.xcdatamodeld in Sources */,
 				B5AC53E624BFCA8900422B65 /* FooterBar.swift in Sources */,
 				B5AC53EA24BFF27100422B65 /* footerButton.swift in Sources */,
 				B5AC53F424C0B54D00422B65 /* checkInRow.swift in Sources */,
+				B5AC540924C11DB700422B65 /* CheckOutModal.swift in Sources */,
 				B53BEEB024BE8397000958B2 /* ContentView.swift in Sources */,
 				B5AC53F024C0A9A500422B65 /* CheckInPage.swift in Sources */,
-				B5AC53FB24C0BC3100422B65 /* Child+CoreDataProperties.swift in Sources */,
+				B5AC53FD24C0F50000422B65 /* addChildModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

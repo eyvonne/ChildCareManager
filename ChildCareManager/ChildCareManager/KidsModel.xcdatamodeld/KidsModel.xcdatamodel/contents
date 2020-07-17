@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17162" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CheckInOuts" representedClassName=".CheckInOuts" syncable="YES">
+        <attribute name="checkedin" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="time" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Child" inverseName="checks" inverseEntity="Child"/>
+    </entity>
     <entity name="Child" representedClassName=".Child" syncable="YES">
         <attribute name="age" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
+        <attribute name="parent1" attributeType="String"/>
+        <attribute name="parent2" optional="YES" attributeType="String"/>
+        <attribute name="parent3" optional="YES" attributeType="String"/>
+        <attribute name="parent4" optional="YES" attributeType="String"/>
+        <attribute name="parent5" optional="YES" attributeType="String"/>
+        <relationship name="checks" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CheckInOuts" inverseName="child" inverseEntity="CheckInOuts"/>
     </entity>
     <elements>
-        <element name="Child" positionX="-54" positionY="-9" width="128" height="73"/>
+        <element name="Child" positionX="-54" positionY="-9" width="128" height="163"/>
+        <element name="CheckInOuts" positionX="-36" positionY="27" width="128" height="88"/>
     </elements>
 </model>
