@@ -2,7 +2,7 @@
 //  Child+CoreDataProperties.swift
 //  ChildCareManager
 //
-//  Created by Eyvonne Geordan on 7/16/20.
+//  Created by Eyvonne Geordan on 7/18/20.
 //
 //
 
@@ -17,13 +17,14 @@ extension Child {
     }
 
     @NSManaged public var age: Float
-    @NSManaged public var name: String
-    @NSManaged public var parent1: String
+    @NSManaged public var name: String?
+    @NSManaged public var parent1: String?
     @NSManaged public var parent2: String?
     @NSManaged public var parent3: String?
     @NSManaged public var parent4: String?
     @NSManaged public var parent5: String?
     @NSManaged public var checks: NSOrderedSet?
+    @NSManaged public var notes: NSSet?
 
 }
 
@@ -62,16 +63,19 @@ extension Child {
 
 }
 
+// MARK: Generated accessors for notes
 extension Child {
-    
-    static func getAllKids() -> NSFetchRequest<Child> {
-        let request:NSFetchRequest<Child> = Child.fetchRequest()
-        
-        let sortDescriptor = NSSortDescriptor(key:"age", ascending: true)
-        
-        request.sortDescriptors = [sortDescriptor]
-        
-        return request
-    }
+
+    @objc(addNotesObject:)
+    @NSManaged public func addToNotes(_ value: Notes)
+
+    @objc(removeNotesObject:)
+    @NSManaged public func removeFromNotes(_ value: Notes)
+
+    @objc(addNotes:)
+    @NSManaged public func addToNotes(_ values: NSSet)
+
+    @objc(removeNotes:)
+    @NSManaged public func removeFromNotes(_ values: NSSet)
 
 }

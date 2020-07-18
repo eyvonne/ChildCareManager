@@ -2,14 +2,12 @@
 //  CheckInOuts+CoreDataProperties.swift
 //  ChildCareManager
 //
-//  Created by Eyvonne Geordan on 7/16/20.
+//  Created by Eyvonne Geordan on 7/18/20.
 //
 //
 
 import Foundation
 import CoreData
-
-
 
 
 extension CheckInOuts {
@@ -18,8 +16,9 @@ extension CheckInOuts {
         return NSFetchRequest<CheckInOuts>(entityName: "CheckInOuts")
     }
 
-    @NSManaged public var time: Date?
     @NSManaged public var checkedin: Bool
+    @NSManaged public var time: Date?
+    @NSManaged public var hours: Float
     @NSManaged public var child: Child?
 
 }

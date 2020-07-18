@@ -1,5 +1,5 @@
 //
-//  Child+CoreDataClass.swift
+//  Notes+CoreDataClass.swift
 //  ChildCareManager
 //
 //  Created by Eyvonne Geordan on 7/18/20.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-
-public class Child: NSManagedObject, Identifiable {
+@objc(Notes)
+public class Notes: NSManagedObject {
 
 }

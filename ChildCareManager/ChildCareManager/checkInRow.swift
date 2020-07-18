@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct checkInRow: View {
-    let name:String
-    let age: Float
+    @State var kid:Child
+
     
     @State var check_in = false
     @State var check_out = false
@@ -18,9 +18,9 @@ struct checkInRow: View {
         HStack{
             Spacer()
             VStack{
-                Text(name)
+                Text(kid.name)
                     .font(.headline)
-                Text(String(format: "%.1f Years", age))
+                Text(String(format: "%.1f Years", kid.age))
                     .font(.caption)
             }.padding(.horizontal, 20)
             .font(.title)
@@ -31,7 +31,7 @@ struct checkInRow: View {
                     .padding(.all, 5)
             })
             .buttonStyle(BorderlessButtonStyle())
-            .sheet(isPresented: $check_in, content:{Text("Checking in \(name)")})
+            .sheet(isPresented: $check_in, content:{CheckInModal(kid: kid)})
 
             Button(action: {self.check_out.toggle()}, label: {
                 Text("Check Out")
@@ -39,7 +39,7 @@ struct checkInRow: View {
             })
             .buttonStyle(BorderlessButtonStyle())
             .sheet(isPresented: $check_out) {
-                Text("Checking out \(name)")
+                CheckOutModal(kid: $kid)
             }
             
             Spacer()
@@ -51,6 +51,6 @@ struct checkInRow: View {
 
 struct checkInRow_Previews: PreviewProvider {
     static var previews: some View {
-        checkInRow(name: "Phil", age: 2.0)
+        checkInRow(kid: Child())
     }
 }

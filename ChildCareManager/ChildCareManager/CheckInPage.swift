@@ -25,15 +25,16 @@ struct CheckInPage: View {
                 Button(action: {self.add_kid.toggle()}, label: {Text("Add Kid")})
                     .padding(.all, 10)
             }
-            List(kids){
-                kid in checkInRow(name: kid.name, age: kid.age)
+            List(){
+                ForEach(kids, id:\.self) {kid in checkInRow(kid: kid)}
             }
         }
         .sheet(isPresented: $add_kid, content: {addChildModal(show_modal: $add_kid)
                 .environment(\.managedObjectContext, managedObjectContext) })
         
-        
+         
     }
+    
     
 }
 
